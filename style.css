@@ -70,6 +70,50 @@ nav div span:first-child {
     letter-spacing: 0.05vw;
 }
 
+/* ── Mini buscador en la barra de navegación ── */
+
+.nav-buscador-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f4f4f4;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.35rem 0.7rem;
+    color: var(--color-muted);
+    flex: 0 1 220px;
+    min-width: 0;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.nav-buscador-wrap:focus-within {
+    border-color: var(--accent);
+    background: #fff;
+}
+
+.nav-buscador-wrap svg {
+    flex-shrink: 0;
+}
+
+#buscador-nav {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--color-text);
+    width: 100%;
+    min-width: 0;
+}
+
+#buscador-nav::placeholder {
+    color: #aaa;
+    font-weight: 400;
+}
+
 footer div {
     letter-spacing: 0.05vw;
     font-size: 0.8rem;
@@ -346,10 +390,36 @@ figure figcaption {
     white-space: nowrap;
 }
 
+#tabla-proyectos td a {
+    color: var(--accent);
+    text-decoration-style: solid;
+}
+
+#tabla-proyectos .sin-repo {
+    font-family: var(--sans);
+    font-size: 0.68rem;
+    color: #bbb;
+    font-style: italic;
+}
+
 #sin-resultados {
     font-family: var(--sans);
     font-size: 0.9rem;
     color: var(--color-muted);
     margin: 1.5rem 0 0;
     text-align: center;
+}
+
+/* ── Ajustes para pantallas angostas ── */
+
+@media (max-width: 520px) {
+    .nav-buscador-wrap {
+        flex: 1 1 auto;
+        max-width: 50%;
+    }
+
+    nav div span:first-child {
+        white-space: nowrap;
+        overflow: hidden;
+    }
 }

@@ -1,7 +1,7 @@
 /*
-    Inspirado en Reuters Graphics:
-    https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/
-*/
+                Lo que sigue está "inspirado" en un trabajo de Reuters Graphics:
+                https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/
+            */
 
 *,
 *::before,
@@ -12,11 +12,13 @@
 }
 
 :root {
+    /* Colores */
     --bg: #fefefe;
     --color-text: rgb(64, 64, 64);
     --color-muted: rgb(102, 102, 102);
     --accent: #e8571a;
     --border: silver;
+    /* Tipografía */
     --serif: "Spectral", serif;
     --sans: "Georama", sans-serif;
 }
@@ -30,7 +32,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* ── Nav y footer ── */
+/* ── Barra de navegación y pie: comparten la misma estructura de layout ── */
 
 nav,
 footer {
@@ -45,7 +47,6 @@ nav {
     border-width: 0 0 1px;
     margin-bottom: 4.5vh;
 }
-
 footer {
     border-width: 1px 0 0;
     margin-top: 20vh;
@@ -74,7 +75,7 @@ footer div {
     font-size: 0.8rem;
 }
 
-/* ── Enlaces ── */
+/* ── Estilos de enlace ── */
 
 a {
     color: var(--color-text);
@@ -100,6 +101,14 @@ header {
     font-family: var(--sans);
 }
 
+header img,
+header .hero-img {
+    width: calc(100% + 2rem);
+    height: auto;
+    margin: 0 -1rem;
+    display: block;
+}
+
 header a {
     text-decoration: none;
 }
@@ -111,7 +120,7 @@ header a:hover {
     text-decoration-style: dotted;
 }
 
-/* ── Metadatos ── */
+/* ── Metadatos de la cabecera ── */
 
 address,
 time {
@@ -135,7 +144,7 @@ time {
     display: block;
 }
 
-/* ── Main ── */
+/* ── Artículo ── */
 
 main {
     width: 95%;
@@ -144,7 +153,7 @@ main {
     padding: 0 1.5rem;
 }
 
-/* ── Tipografía ── */
+/* ── Jerarquía tipográfica ── */
 
 h1 {
     font-weight: 700;
@@ -190,7 +199,7 @@ h5 {
     font-size: calc(0.65rem + 0.25vh + 0.25vw);
 }
 
-/* ── Texto ── */
+/* ── Cuerpo del texto ── */
 
 p {
     font-family: var(--serif);
@@ -233,7 +242,7 @@ ul li {
     background-position-y: center;
 }
 
-/* ── Figuras ── */
+/* ── Figura que contiene el gráfico ── */
 
 figure {
     margin: 2rem -1.5rem;
@@ -251,11 +260,10 @@ figure figcaption {
     line-height: 1.4;
     margin-top: 1rem;
     padding-top: 0.75rem;
-    border-top: 1px solid #eee;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.1rem;
 }
 
-/* ── SVG placeholder ── */
+/* ── SVG dentro de figuras (RAWGraphs + hero) ── */
 
 .svg-placeholder svg {
     width: 100%;
@@ -291,7 +299,7 @@ figure figcaption {
     color: #bbb;
 }
 
-/* ── Tabla ── */
+/* ── Tabla dinámica ── */
 
 .tabla-wrap {
     overflow-x: auto;
@@ -302,8 +310,8 @@ figure figcaption {
     width: 100%;
     border-collapse: collapse;
     font-family: var(--sans);
-    font-size: 0.8rem;
-    min-width: 520px;
+    font-size: 0.78rem;
+    min-width: 620px;
 }
 
 #tabla-proyectos thead {
@@ -316,7 +324,7 @@ figure figcaption {
     color: var(--color-muted);
     text-transform: uppercase;
     letter-spacing: 0.06rem;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     padding: 0.5rem 0.6rem;
 }
 
@@ -332,10 +340,10 @@ figure figcaption {
     background: #fdf6f2;
 }
 
-#tabla-proyectos td:nth-child(4),
-#tabla-proyectos td:nth-child(5) {
+#tabla-proyectos td:last-child {
     text-align: center;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 #sin-resultados {

@@ -39,11 +39,44 @@
 
         <main id="contenedor">
 
-            <p>Cada semestre, un grupo de estudiantes del programa de Diseño de la Universidad de Chile (UCH) defiende su Proyecto de Título ante una comisión examinadora. Cada proyecto aprobado queda, además, registrado: quién lo hizo, bajo qué guía, en qué semestre, con qué nota, y lo más revelador, bajo qué tendencia temática se clasifica. Acumulados desde 2021, esos registros suman hoy 334 proyectos aprobados, una muestra lo bastante grande para empezar a ver patrones que ningún proyecto individual revela por sí solo.</p>
+            <p>Cada semestre, estudiantes del programa de Diseño de la Universidad de Chile presentan y defienden su Proyecto de Título ante una comisión examinadora. Desde 2021, se han registrado 334 proyectos aprobados, incluyendo información clave como autoría, profesor guía, semestre, calificación y tendencia temática. Esta base de datos permite identificar patrones que trascienden los casos individuales.</p>
 
             <p>Este recorrido parte de lo más general, ¿cuántos proyectos hay? y ¿quién los hace?, y desciende hacia lo más específico: qué temas se repiten, qué combinaciones de mención y tendencia son frecuentes, cómo ha cambiado el interés por cada área en el tiempo, y finalmente, proyecto por proyecto.</p>
 
             <h4>¿Qué panorama general presentan los proyectos de título de Diseño UCH?</h4>
+
+            <figure class="stats-destacados">
+                <div class="stat-bloque">
+                    <p class="stat-titulo">Composición de género, 2021–2025</p>
+                    <div class="stat-barra-genero" role="img" aria-label="78,1% de los proyectos fueron realizados por mujeres y 21,9% por hombres">
+                        <span class="segmento mujeres" style="width: 78.1%;" aria-hidden="true"></span>
+                        <span class="segmento hombres" style="width: 21.9%;" aria-hidden="true"></span>
+                    </div>
+                    <div class="stat-leyenda" aria-hidden="true">
+                        <span><i class="punto mujeres"></i>Mujeres <strong>78,1%</strong></span>
+                        <span><i class="punto hombres"></i>Hombres <strong>21,9%</strong></span>
+                    </div>
+                </div>
+
+                <div class="stat-bloque">
+                    <p class="stat-titulo">Proyectos aprobados por bloque de semestres</p>
+                    <div class="stat-barras-comparacion" role="img" aria-label="De 24 proyectos en los semestres 2021-2 a 2022-2, a 126 proyectos en los semestres 2025-1 y 2025-2: más de cinco veces esa cifra">
+                        <div class="stat-barra-vertical" aria-hidden="true">
+                            <span class="valor">24</span>
+                            <div class="barra" style="height: 19%;"></div>
+                            <span class="etiqueta">2021-2 a 2022-2<br>(3 semestres)</span>
+                        </div>
+                        <div class="stat-barra-vertical" aria-hidden="true">
+                            <span class="valor">126</span>
+                            <div class="barra activa" style="height: 100%;"></div>
+                            <span class="etiqueta">2025-1 y 2025-2<br>(2 semestres)</span>
+                        </div>
+                    </div>
+                </div>
+                <figcaption>
+                    Proporción de género y crecimiento de titulaciones por bloque de semestres, programa de Diseño UCH (2021–2025, n=334). Fuente: registro de proyectos aprobados.
+                </figcaption>
+            </figure>
 
             <p>De los 334 proyectos aprobados, el 78,1% lo realizaron mujeres y el 21,9% hombres. Esta proporción se sostiene de forma consistente entre 2021 y 2025, lo que sugiere que no es un fenómeno puntual de alguna generación, sino una característica estructural de quienes hoy completan el programa.</p>
 
@@ -55,7 +88,9 @@
 
             <figure>
                 <div class="svg-placeholder" aria-label="Gráfico de barras horizontales de proyectos por tendencia">
-                    <img src="img/grafico1.svg" alt="Barras de cantidad de proyectos por tendencia temática" />
+                    <object type="image/svg+xml" data="img/grafico1.svg" aria-label="Barras de cantidad de proyectos por tendencia temática">
+                        Barras de cantidad de proyectos por tendencia temática
+                    </object>
                 </div>
                 <figcaption>
                     Proyectos de título aprobados por tendencia temática, 2021–2025 (n=334). Visualización generada en RAWGraphs a partir del listado de proyectos aprobados y ordenada en editor vectorial. Fuente: <a href="https://disenouchile.github.io/titulo/index.html" target="_blank">Proyectos de Título — Diseño UCH</a> y registro de proyectos aprobados hasta 2025-2.
@@ -83,7 +118,9 @@
 
             <figure>
                 <div class="svg-placeholder" aria-label="Gráfico de barras 100% apiladas de proporción de hombres y mujeres por mención de titulación">
-                    <img src="img/grafico2.svg" alt="Barras 100% apiladas de proporción de hombres y mujeres por mención de titulación" />
+                    <object type="image/svg+xml" data="img/grafico2.svg" aria-label="Barras 100% apiladas de proporción de hombres y mujeres por mención de titulación">
+                        Barras 100% apiladas de proporción de hombres y mujeres por mención de titulación
+                    </object>
                 </div>
                 <figcaption>
                     Proporción de hombres y mujeres por mención de titulación (2021–2025, n=334). Visualización generada en RAWGraphs a partir del listado de proyectos aprobados y ordenada en editor vectorial. Fuente: registro de proyectos aprobados del programa de Diseño UCH.
@@ -107,7 +144,7 @@
 
             <h4>¿Qué oportunidades de investigación e innovación surgen de estos hallazgos?</h4>
 
-            <p>Tres lecturas se desprenden de este recorrido. Primero, la distribución temática es más equilibrada de lo que cabría esperar: ninguna tendencia se impone sobre el resto, lo que habla de un cuerpo estudiantil con intereses diversos y no de una moda pasajera concentrada en un solo tema. Segundo, la especialización por mención, objetos y sistemas físicos en Industrial y Servicios, piezas comunicacionales en Visual y Medios, es consistente y predecible, lo que sugiere que quienes buscan cruzar esa frontera (resolver un problema de salud con una pieza editorial, o un problema de género con un objeto físico) encuentran menos antecedentes directos en qué apoyarse. Tercero, <em>Tecnología, Interacción y Medios</em> es la tendencia más rezagada de forma sostenida en el tiempo, lo que la convierte en el territorio con mayor espacio disponible para quienes buscan un tema de título con menos competencia directa y más preguntas abiertas.</p>
+            <p>Tres lecturas se desprenden de este recorrido. Primero, las tendencias temáticas se distribuyen de forma equilibrada, reflejando una diversidad de intereses más que una concentración en un tema específico. Segundo, las menciones mantienen perfiles definidos: Industrial se orienta a objetos y sistemas físicos, mientras que Visual y Medios se enfoca en piezas comunicacionales, dejando menos referentes para proyectos que combinan ambos enfoques. Tercero, Tecnología, Interacción y Medios ha sido la tendencia menos desarrollada en el tiempo, posicionándose como un área con mayor potencial de exploración y nuevas oportunidades.</p>
 
             <p>Para quienes hoy enfrentan la elección de un tema de Proyecto de Título, estos datos no dictan qué investigar, pero sí muestran dónde ya hay mucho camino recorrido y dónde el terreno está más despejado.</p>
 
